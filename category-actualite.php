@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h1>Le blog</h1>
+<h1>Le blog de ta mère</h1>
 
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
