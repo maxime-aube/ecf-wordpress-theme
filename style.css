@@ -197,8 +197,8 @@ body {
     font-style: normal;
     font-weight: 600;
     src: local('Raleway SemiBold'), local('Raleway-SemiBold'),
-        url('../fonts/raleway-v16-latin-600.woff2') format('woff2'),
-        url('../fonts/raleway-v16-latin-600.woff') format('woff');
+        url('./fonts/raleway-v16-latin-600.woff2') format('woff2'),
+        url('./fonts/raleway-v16-latin-600.woff') format('woff');
 }
 
 @font-face {
@@ -207,8 +207,8 @@ body {
     font-style: normal;
     font-weight: 700;
     src: local('Raleway Bold'), local('Raleway-Bold'),
-        url('../fonts/raleway-v16-latin-700.woff2') format('woff2'),
-        url('../fonts/raleway-v16-latin-700.woff') format('woff');
+        url('./fonts/raleway-v16-latin-700.woff2') format('woff2'),
+        url('./fonts/raleway-v16-latin-700.woff') format('woff');
 }
 
 @font-face {
@@ -217,8 +217,8 @@ body {
     font-style: normal;
     font-weight: 400;
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
-        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
-        url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+        url('./fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+        url('./fonts/montserrat-v14-latin-regular.woff') format('woff');
 }
 
 @font-face {
@@ -227,8 +227,8 @@ body {
     font-style: italic;
     font-weight: 400;
     src: local('Montserrat Italic'), local('Montserrat-Italic'),
-        url('../fonts/montserrat-v14-latin-italic.woff2') format('woff2'),
-        url('../fonts/montserrat-v14-latin-italic.woff') format('woff');
+        url('./fonts/montserrat-v14-latin-italic.woff2') format('woff2'),
+        url('./fonts/montserrat-v14-latin-italic.woff') format('woff');
 }
 
 @font-face {
@@ -237,8 +237,8 @@ body {
     font-style: normal;
     font-weight: 500;
     src: local('Montserrat Medium'), local('Montserrat-Medium'),
-        url('../fonts/montserrat-v14-latin-500.woff2') format('woff2'),
-        url('../fonts/montserrat-v14-latin-500.woff') format('woff');
+        url('./fonts/montserrat-v14-latin-500.woff2') format('woff2'),
+        url('./fonts/montserrat-v14-latin-500.woff') format('woff');
 }
 
 @font-face {
@@ -247,8 +247,8 @@ body {
     font-style: normal;
     font-weight: 600;
     src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
-        url('../fonts/montserrat-v14-latin-600.woff2') format('woff2'),
-        url('../fonts/montserrat-v14-latin-600.woff') format('woff');
+        url('./fonts/montserrat-v14-latin-600.woff2') format('woff2'),
+        url('./fonts/montserrat-v14-latin-600.woff') format('woff');
 }
 
 /* General */
@@ -569,7 +569,7 @@ body:not(.home):not(.formation-simple) main {
 /* Homepage */
 
 .home-hero {
-    background-image: url(../img/hero-background.jpg);
+    background-image: url(./img/hero-background.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -637,7 +637,7 @@ body:not(.home):not(.formation-simple) main {
 
 .card-date::before {
     display: flex;
-    content: url('../img/icon-date.svg');
+    content: url('./img/icon-date.svg');
     margin-right: 0.8rem;
 }
 
@@ -767,7 +767,7 @@ body:not(.home):not(.formation-simple) main {
     align-items: center;
     min-height: 40rem;
     color: #fff;
-    background-image: url(../img/formation-1.jpg);
+    background-image: url(./img/formation-1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -895,7 +895,7 @@ body:not(.home):not(.formation-simple) main {
 
 .post-date::before {
     display: flex;
-    content: url('../img/icon-date.svg');
+    content: url('./img/icon-date.svg');
     margin-right: 0.8rem;
 }
 
@@ -975,7 +975,7 @@ body:not(.home):not(.formation-simple) main {
     }
 
     .module-hero {
-        background-image: url(../img/formation-1_2x.jpg);
+        background-image: url(./img/formation-1_2x.jpg);
     }
 }
 

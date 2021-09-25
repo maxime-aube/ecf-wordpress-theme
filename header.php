@@ -12,7 +12,7 @@
 
     <header class="main-header">
 		<div class="container">
-			<div class="logo"><a href="index.html">DWWM</a></div>
+			<div class="logo"><a href="<?php echo get_home_url(); ?>">DWWM</a></div>
             <nav class="main-nav">
                 <?php wp_nav_menu([
                     'theme_location' => 'main',

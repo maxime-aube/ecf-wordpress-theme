@@ -19,7 +19,7 @@ function charger_dautres_trucs_cpt() {
 
         $labels = [
             'etudiant' => [
-                'name' => 'Étudiant',
+                'name' => 'Les étudiants',
                 'all_items' => 'les étudiants',
                 'singular_name' => 'étudiant',
                 'add_new_item' => 'Ajouter un étudiant',
@@ -27,7 +27,7 @@ function charger_dautres_trucs_cpt() {
                 'menu_name' => 'Étudiants'
             ],
             'module' => [
-                'name' => 'Module',
+                'name' => 'Les modules de la formation',
                 'all_items' => 'la formation',
                 'singular_name' => 'module de formation',
                 'add_new_item' => 'ajouter un module de formation',

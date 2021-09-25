@@ -1,26 +1,47 @@
 <?php get_header(); ?>
 
-<h1>Les étudiants</h1>
+<main id="main-content" class="students">
+	<div class="container">
+        <h1 class="section-title"><?php post_type_archive_title(); ?></h1>
 
-<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+        <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
-    <article class="post">
-        <h2><?php the_title(); ?></h2>
-  
-        <?php the_post_thumbnail(); ?>
+        <article class="post student">
+            <?php the_post_thumbnail('post-thumbnail', ['class' => 'student-img']); ?>
+            <h2 class="student-name"><?php the_title(); ?></h2>
+            <a href="<?php the_permalink(); ?>" class="post__link student-link">En savoir plus</a>
+        </article>
+
+        <?php endwhile; endif; ?>
+
+        <!-- on s'occupera de la pagination si y'a le temps -->
         
-        <p class="post__meta">
-            Publié le <?php the_time( get_option( 'date_format' ) ); ?> 
-            par <?php the_author(); ?> • <?php comments_number(); ?>
-        </p>
-        
-          <?php the_excerpt(); ?>
-          
-          <p>
-            <a href="<?php the_permalink(); ?>" class="post__link">Lire la suite</a>
-        </p>
-    </article>
-
-<?php endwhile; endif; ?>
+        <!-- <nav class="pagination">
+            <ul class="pagination-list">
+                <li class="pagination-item">
+                    <a href="#" class="pagination-link" aria-label="Précédent">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="screen-reader-text">Précédent</span>
+                    </a>
+                </li>
+                <li class="pagination-item current">
+                    <a href="#" class="pagination-link">1</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#" class="pagination-link">2</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#" class="pagination-link">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="#" class="pagination-link" aria-label="Suivant">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="screen-reader-text">Suivant</span>
+                    </a>
+                </li>
+            </ul>
+        </nav> -->
+    </div>
+</main>
 
 <?php get_footer(); ?>
