@@ -13,19 +13,13 @@
     <header class="main-header">
 		<div class="container">
 			<div class="logo"><a href="index.html">DWWM</a></div>
-			<!-- <nav class="main-nav">
-				<ul class="menu" id="main-menu">
-					<li class="menu-item"><a href="index.html">Accueil</a></li>
-					<li class="menu-item"><a href="formation-liste.html">La formation</a></li>
-					<li class="menu-item active"><a href="etudiant-liste.html">Les étudiants</a></li>
-					<li class="menu-item"><a href="actualite-liste.html">Actualités</a></li>
-					<li class="menu-item"><a href="contact.html">Nous contacter</a></li>
-				</ul>
-			</nav> -->
-            <?php wp_nav_menu([
-                'theme_location' => 'main',
-                'container' => 'ul',
-                'menu_class' => 'main-nav'
-            ]); ?>
+            <nav class="main-nav">
+                <?php wp_nav_menu([
+                    'theme_location' => 'main',
+                    'container' => 'ul',
+                    'menu_class' => 'menu'
+                ]); ?>
+            </nav>
+
 		</div>
 	</header>

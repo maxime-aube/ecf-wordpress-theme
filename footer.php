@@ -9,16 +9,20 @@
 				37200 Tours<br>
 				T : <a href="tel:0247402680">02 47 40 26 80</a>
 			</address>
-            <?php wp_nav_menu([
-                'theme_location' => 'footer',
-                'container' => 'ul',
-                'menu_class' => 'footer-nav'
-            ]); ?>
-            <?php wp_nav_menu([
-                'theme_location' => 'social',
-                'container' => 'ul',
-                'menu_class' => 'social-nav'
-            ]); ?>
+            <nav class="mentions-nav">
+                <?php wp_nav_menu([
+                    'theme_location' => 'mentions',
+                    'container' => 'ul',
+                    'menu_class' => 'menu'
+                ]); ?>
+            </nav>
+            <nav class="social-nav">
+                <?php wp_nav_menu([
+                    'theme_location' => 'social',
+                    'container' => 'ul',
+                    'menu_class' => 'menu'
+                ]); ?>
+            </nav>
 		</div>
 	</footer>
 
