@@ -766,7 +766,7 @@ body:not(.home):not(.formation-simple) main {
     justify-content: center;
     align-items: center;
     min-height: 40rem;
-    color: #fff;
+    color: var(--primary);
     background-image: url(./img/formation-1.jpg);
     background-size: cover;
     background-position: center;

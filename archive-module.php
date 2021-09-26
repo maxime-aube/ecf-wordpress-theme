@@ -20,7 +20,7 @@
                     <h2 class="card-title"><?php the_title(); ?></h2>
                     <p class="card-excerpt"><?php the_excerpt(); ?></p>
                 </div>
-                <p><a href="<?php the_permalink(); ?>" class="post__link card-link">Lire la suite <img loading="lazy"  src="img/icon-arrow-right.svg" alt="" aria-hidden="true"></a></p>
+                <p><a href="<?php the_permalink(); ?>" class="post__link card-link">Lire la suite <img loading="lazy"  src="<?php echo get_stylesheet_directory_uri() ?>/img/icon-arrow-right.svg" alt="" aria-hidden="true"></a></p>
             </article>
 
             <?php endwhile; endif; ?>
