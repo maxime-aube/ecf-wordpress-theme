@@ -27,7 +27,7 @@
         <div class="field-content"><?php the_field('livre'); ?></div>
       </div>
       <div class="field">
-        <div class="field-title">Sa chanson/div>
+        <div class="field-title">Sa chanson</div>
         <div class="field-content"><?php the_field('chanson'); ?></div>
       </div>
       <div class="field">
