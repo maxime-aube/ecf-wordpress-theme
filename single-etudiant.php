@@ -35,7 +35,7 @@
         <div class="field-content"><?php the_field('application'); ?></div>
       </div>
       <div class="field">
-        <div class="field-title">Son site web/div>
+        <div class="field-title">Son site web</div>
         <div class="field-content"><?php the_field('site_web'); ?></div>
       </div>
       <div class="field">
