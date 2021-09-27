@@ -102,4 +102,3 @@ $my_query = new WP_Query( $args );
 </main>
 
 <?php get_footer(); ?>
-
