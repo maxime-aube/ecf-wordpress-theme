@@ -22,6 +22,7 @@
             <button type="submit">Envoyer <img loading="lazy"  src="img/icon-arrow-right.svg" alt="" aria-hidden="true"></button>
         </form>
 
+        <?php the_content(); ?>
     <?php endwhile; endif; ?>
 
     </div>
